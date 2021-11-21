@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	transition: .2s;
+}
+
+header {
+	margin: 8px auto;
+	padding: 3px 25px;
+	width: calc(100vw - 20px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px 2px #00000050;
+}
+
+header>.logo>a>img {
+	width: auto;
+	height: 50px;
+}
+
+header>.loginOption {
+	display: flex;
+	padding: 0 5px;
+}
+
+header>.loginOption>a {
+	text-decoration: none;
+	margin-right: 12px;
+	padding: 3px 8px 3px 10px;
+	border-radius: 5px;
+	transition: background-color .2s;
+	transition: transform .4s;
+}
+
+header>.loginOption>a.red {
+	background-color: #ec5c4180;
+	color: #ec5c41;
+}
+
+header>.loginOption>a.red:hover {
+	background-color: #ec5c41;
+	color: #fff;
+}
+
+header>.loginOption>a.green {
+	background-color: #51e38880;
+	color: #1cb957;
+}
+
+header>.loginOption>a.green:hover {
+	background-color: #51e388;
+	color: #fff;
+}
+
+header>.loginOption>a.blue {
+	background-color: #78a3f080;
+	color: #1b61dd;
+}
+
+header>.loginOption>a.blue:hover {
+	background-color: #78a3f0;
+	color: #fff;
+}
+
+header>.loginOption>a:hover {
+	transform: scale(1.15);
+}
+
+main {
+	margin-top: 10px;
+	padding: 20px 30px;
+}
+
+main>form {
+	border-radius: 10px;
+	padding: 10px 25px;
+	box-shadow: 0px 0px 20px 2px #00000050;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+main>form>h1 {
+	color: #343434;
+	font-size: 1.5rem;
+	margin-bottom: 2px;
+}
+
+main>form>h2 {
+	color: #343434;
+	font-size: 1rem;
+	font-weight: lighter;
+	margin-bottom: 20px;
+	margin-left: 1px;
+}
+
+main>form>label {
+	font-size: 1.1rem;
+	color: #343434;
+	font-weight: bolder;
+}
+
+main>form>label+input {
+	font-size: 1rem;
+	margin-bottom: 10px;
+	height: 25px;
+	border: none;
+	border-bottom: solid 2px #e5e5e5;
+	font-size: 1.15rem;
+	padding: 2px 5px;
+	transition: .2s ease-in;
+	background-color: transparent;
+}
+
+main>form>label+input:focus {
+	border-bottom: solid 2px #ec5c41;
+}
+
+main>form>input[type=submit] {
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px 15px;
+	background-color: #ec5c41;
+	font-size: 1.1rem;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+main>.links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+}
+
+main>.links>section	{
+	margin-right: 10px;
+	padding: 15px 25px;
+	box-shadow: 0px 0px 20px 2px #00000050;
+	border: none;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+main>.links>section>h1 {
+	color: #343434;
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+main>.links>section>ul>li {
+	margin-bottom: 5px;
+}
+
+main>.links>section>ul>li>a {
+	color: #343434;
+	transition: .1s ease-in-out;
+}
+
+main>.links>section>ul>li>a:hover {
+	color: #ec5c41;
+	text-decoration: underline;
+}
+
+label.themeChange {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	width: 60px;
+	height: 30px;
+}
+
+label.themeChange>input {
+	display: none;
+}
+
+label.themeChange>span {
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px 2px #00000050;
+	transition: .3s ease-in-out;
+}
+
+label.themeChange>span i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	background-color: #282a2e;
+	height: 23px;
+	width: 23px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 2px 2px #00000050;
+	transition: .2s ease-in-out;
+	color: #fff;
+}
+
+label.themeChange>span>i>#sunny {
+	display: inline;
+	transition: .1s;
+}
+
+label.themeChange>span>i>#moon {
+	display: none;
+	transition: .1s;
+}
+
+label.themeChange>input:checked ~ span {
+	background-color: #282a2e;
+	box-shadow: 0px 0px 20px 2px #00000050;
+}
+
+label.themeChange>input:checked ~ span>i {
+	left: 33px;
+	color: #000;
+	background-color: #fff;
+}
+
+label.themeChange>input:checked ~ span>i>#sunny {
+	display: none;
+}
+
+label.themeChange>input:checked ~ span>i>#moon {
+	display: inline;
+}
+
+@media screen and (max-width: 970px) {
+	main>.links {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	header {
+	 	flex-direction: column;
+	 	padding: 15px;
+	}
+}

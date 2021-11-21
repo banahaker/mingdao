@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-hunt-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>明道全球資訊網</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#"><img src="./img/logo.png" alt="明道中學全球資訊網"><a>
+		</div>
+		<div class="loginOption">
+			<a class="red" href="#">學生</a>
+			<a class="green" href="#">家長</a>
+			<a class="blue" href="#">教師</a>
+		</div>
+	</header>
+	<main>
+		<form action="http://crm.mingdao.edu.tw/crm/login.asp" method="post">
+			<h1>明道雲端系統</h1>
+			<h2>學生</h2>
+			<label for="username">帳號：</label>
+			<input name="user_id" id="username" type="text" required><br>
+			<label for="password">密碼：</label>
+			<input name="user_password" id="password" type="password" required><br>
+			<input type="submit" value="Login">
+		</form>
+
+		<section class="links">
+			<section>
+				<h1>訊息</h1>
+				<ul>
+					<li><a target="_blank" href="https://drive.google.com/drive/folders/13kWeLe3p1pCvkXliv2-ajmMptNG4HOMz">班會通報</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>課程選修  入學申請系統</h1>
+				<ul>
+					<li><a target="_blank" href="http://140.128.156.25/course/stu/index.html">選課系統</a></li>
+					<li><a target="_blank" href="http://s1.mingdao.edu.tw/UOTSR/Web/index1.php">大學繁星推薦校內預選系統</a></li>
+					<li><a target="_blank" href="http://s1.mingdao.edu.tw/UOTSR/Web/index2.php">大學暨四技入學申請志願預選系統</a></li>
+					<li><a target="_blank" href="http://s2.mingdao.edu.tw/UOTSR/Web/index3.php">大學四技申請入學模擬面試系統</a></li>
+					<li><a target="_blank" href="http://s2.mingdao.edu.tw/UOTSR/Web.V/index3.php">四技二專甄選模擬面試系統</a></li>
+					<li><a target="_blank" href="https://sites.google.com/ms.mingdao.edu.tw/mdhs-counseling/%E7%94%9F%E6%B6%AF%E7%99%BC%E5%B1%95/%E5%A4%A7%E5%AD%B8%E5%8F%8A%E5%9B%9B%E6%8A%80%E5%A4%9A%E5%85%83%E5%85%A5%E5%AD%B8%E8%B3%87%E8%A8%8A%E5%BD%99%E6%95%B4?authuser=0"> 大學及四技多元入學資訊彙整</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>各項申請業務</h1>
+				<ul>
+					<li><a target="_blank" href="http://www.mingdao.edu.tw/acaaff/new/paper.htm">證件申請</a></li>
+					<li><a target="_blank" href="http://www.mingdao.edu.tw/acaaff/new/money.html">獎學金申請</a></li>
+					<li><a target="_blank" href="http://www.mingdao.edu.tw/stuaff/test/downlow.php">學務處各項表單申請</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>校園生活</h1>
+				<ul>
+					<li><a target="_blank" href="http://www.mingdao.edu.tw/stuaff/test/dormitory.php">學生宿舍</a></li>
+					<li><a target="_blank" href="https://www2.mingdao.edu.tw/genaff/7car.html">校車資訊</a></li>
+					<li><a target="_blank" href="https://www.facebook.com/groups/186757454709587/">班聯會</a></li>
+					<li><a target="_blank" target="_blank" href="http://www.mingdao.edu.tw/library/new/ibook.php">愛書人讀書會</a></li>
+					<li><a target="_blank" href="http://s2.mingdao.edu.tw/ReLearn/Web/index.php">課外社團線上選填</a></li>
+					<li><a target="_blank" href="http://s2.mingdao.edu.tw/ORDER/?ifPg=login_student.php">班級事務系統</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>學習專區</h1>
+				<ul>
+					<li><a target="_blank" href="http://etabc.tw/tn/">英文學習加油站</a></li>
+					<li><a target="_blank" href="http://s1.mingdao.edu.tw/ReadCert/Web/">KEEP讀ING閱讀認證平台</a></li>
+				</ul>
+			</section>
+		</section>
+	</main>
+	<label class="themeChange">
+		<input id="themeChange" type="checkbox">
+		<span><i><ion-icon id="sunny" name="sunny"></ion-icon><ion-icon id="moon" name="moon"></ion-icon></i></span>
+	</label>
+	<script src="./app.js"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
