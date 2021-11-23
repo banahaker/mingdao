@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -15,6 +16,7 @@ a {
 
 body {
 	transition: .2s;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 
 header {
@@ -40,6 +42,7 @@ header>.loginOption {
 }
 
 header>.loginOption>a {
+	font-weight: 400;
 	text-decoration: none;
 	margin-right: 12px;
 	padding: 3px 8px 3px 10px;
@@ -97,6 +100,7 @@ main>form {
 }
 
 main>form>h1 {
+	font-weight: 700;
 	color: #343434;
 	font-size: 1.5rem;
 	margin-bottom: 2px;
@@ -105,7 +109,7 @@ main>form>h1 {
 main>form>h2 {
 	color: #343434;
 	font-size: 1rem;
-	font-weight: lighter;
+	font-weight: 300;
 	margin-bottom: 20px;
 	margin-left: 1px;
 }
@@ -161,6 +165,7 @@ main>.links>section	{
 
 main>.links>section>h1 {
 	color: #343434;
+	font-weight: 7s00;
 	margin-bottom: 10px;
 	padding-bottom: 2px;
 	border-bottom: 1px solid #e5e5e5;
@@ -275,6 +280,7 @@ notion>h1 {
 }
 
 notion>p {
+	font-weight: 300;
 	margin: 10px 20px;
 }
 
