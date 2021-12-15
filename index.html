@@ -12,20 +12,20 @@
 			<a href="#"><img src="./img/logo.png" alt="明道中學全球資訊網"><a>
 		</div>
 		<div class="loginOption">
-			<a class="red" href="#">學生</a>
-			<a class="green" href="#">家長</a>
-			<a class="blue" href="#">教師</a>
+			<a class="red changeMode" href="#" data-mode="student">學生</a>
+			<a class="green changeMode" href="#" data-mode="parent">家長</a>
+			<a class="blue changeMode" href="#" data-mode="teacher">教師</a>
 		</div>
 	</header>
 	<main>
-		<form action="http://crm.mingdao.edu.tw/crm/login.asp" method="post">
+		<form action="#">
 			<h1>明道雲端系統</h1>
-			<h2>學生</h2>
-			<label for="username">帳號：</label>
-			<input autocomplete="off" name="user_id" id="username" type="text" required><br>
-			<label for="password">密碼：</label>
-			<input name="user_password" id="password" type="password" required><br>
-			<input type="submit" value="Login">
+			<h2 id="mode">學生</h2>
+			<label for="username">帳號 :</label>
+			<input id="username" type="text"><br>
+			<label for="password">密碼 :</label>
+			<input id="password" type="password"><br>
+			<input data-send-request type="button" value="Login">
 		</form>
 
 		<section class="links">
@@ -33,6 +33,7 @@
 				<h1>訊息</h1>
 				<ul>
 					<li><a target="_blank" href="https://drive.google.com/drive/folders/13kWeLe3p1pCvkXliv2-ajmMptNG4HOMz">班會通報</a></li>
+					<li><a target="_blank" href="https://github.com/banahaker/mingdao">本站Github</a></li>
 				</ul>
 			</section>
 			<section>
@@ -86,6 +87,7 @@
 
 	<script src="./notion.js"></script>
 	<script src="./app.js"></script>
+	<script src="./theme.js"></script>
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

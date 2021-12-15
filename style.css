@@ -136,7 +136,7 @@ main>form>label+input:focus {
 	border-bottom: solid 2px #ec5c41;
 }
 
-main>form>input[type=submit] {
+main>form>input[type=button] {
 	border: none;
 	color: #fff;
 	border-radius: 5px;
