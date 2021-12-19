@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>明道全球資訊網 - 改良版</title>
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 	<header>
@@ -28,6 +28,18 @@
 			<input data-send-request type="button" value="Login">
 		</form>
 
+		<section class="realtimeInfo">
+			<h1>榮譽榜</h1>
+			<ul id="honorRollData">
+				資料處理中....
+			</ul>
+		</section>
+		<section class="realtimeInfo">
+			<h1>校園公告</h1>
+			<ul id="announcementsData">
+				資料處理中....
+			</ul>
+		</section>
 		<section class="links">
 			<section>
 				<h1>訊息</h1>
@@ -85,9 +97,9 @@
 		<button>確定</button>
 	</notion>
 
-	<script src="./notion.js"></script>
-	<script src="./app.js"></script>
-	<script src="./theme.js"></script>
+	<script src="./tools/notion.js"></script>
+	<script src="./app/login.js"></script>
+	<script src="./style/theme.js"></script>
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>

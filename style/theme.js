@@ -7,8 +7,9 @@ const formH1 = document.querySelector('main>form>h1');
 const formH2 = document.querySelector('main>form>h2');
 const formLabel = document.querySelectorAll('main>form>label');
 const formInput = document.querySelectorAll('main>form>label+input');
-const sectionH1 = document.querySelectorAll('main>.links>section>h1');
-const linkATag = document.querySelectorAll('main>.links>section>ul>li>a');
+const linkSectionH1 = document.querySelectorAll('main>.links>section>h1');
+const sectionH1 = document.querySelectorAll('main>section>h1');
+const linkATag = document.querySelectorAll('main a');
 
 themeChange.addEventListener('change', () => {
 	darkTheme = !darkTheme;
@@ -21,6 +22,9 @@ themeChange.addEventListener('change', () => {
 		formInput[0].style.color = '#fff';
 		formInput[1].style.color = '#fff';
 		sectionH1.forEach((index) => {
+			index.style.color = '#fff';
+		});
+		linkSectionH1.forEach((index) => {
 			index.style.color = '#fff';
 		});
 		linkATag.forEach((index) => {
@@ -41,6 +45,9 @@ themeChange.addEventListener('change', () => {
 		formInput[0].style.color = '#343434';
 		formInput[1].style.color = '#343434';
 		sectionH1.forEach((index) => {
+			index.style.color = '#343434';
+		});
+		linkSectionH1.forEach((index) => {
 			index.style.color = '#343434';
 		});
 		linkATag.forEach((index) => {
