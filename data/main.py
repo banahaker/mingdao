@@ -57,4 +57,5 @@ jsonAllInfo = json.dumps(allInfo, ensure_ascii=False, sort_keys=True, indent=2)
 # write json file
 with open('information.json', 'w', encoding='utf-8') as file:
     file.write(jsonAllInfo)
-    gitCommit()
+
+gitCommit()
