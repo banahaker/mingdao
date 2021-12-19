@@ -206,7 +206,7 @@ label.themeChange {
 	height: 30px;
 }
 
-label.themeChange>input {
+#themeChange {
 	display: none;
 }
 
@@ -246,23 +246,31 @@ label.themeChange>span>i>#moon {
 	transition: .1s;
 }
 
-label.themeChange>input:checked ~ span {
+#themeChange:checked ~ label.themeChange>span {
 	background-color: #282a2e;
 	box-shadow: 0px 0px 20px 2px #00000050;
 }
 
-label.themeChange>input:checked ~ span>i {
+#themeChange:checked ~ label.themeChange>span>i {
 	left: 33px;
 	color: #000;
 	background-color: #fff;
 }
 
-label.themeChange>input:checked ~ span>i>#sunny {
+#themeChange:checked ~ label.themeChange>span>i>#sunny {
 	display: none;
 }
 
-label.themeChange>input:checked ~ span>i>#moon {
+#themeChange:checked ~ label.themeChange>span>i>#moon {
 	display: inline;
+}
+
+#themeChange:checked ~ main a{
+	color: #fff;
+}
+
+#themeChange:checked ~ main a:hover{
+	color: #ec5c41;
 }
 
 notion {

@@ -17,6 +17,7 @@
 			<a class="blue changeMode" href="#" data-mode="teacher">教師</a>
 		</div>
 	</header>
+	<input id="themeChange" type="checkbox">
 	<main>
 		<form action="#">
 			<h1>明道雲端系統</h1>
@@ -87,8 +88,7 @@
 			</section>
 		</section>
 	</main>
-	<label class="themeChange">
-		<input id="themeChange" type="checkbox">
+	<label class="themeChange" for="themeChange">
 		<span><i><ion-icon id="sunny" name="sunny"></ion-icon><ion-icon id="moon" name="moon"></ion-icon></i></span>
 	</label>
 	<notion id="notion">
@@ -98,6 +98,7 @@
 	</notion>
 
 	<script src="./tools/notion.js"></script>
+	<script src="./app/dataUpdate.js"></script>
 	<script src="./app/login.js"></script>
 	<script src="./style/theme.js"></script>
 	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
