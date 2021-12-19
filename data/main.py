@@ -1,6 +1,16 @@
 import requests
 import bs4
 import json
+import os
+
+# define git commit function
+def gitCommit():
+    os.chdir('..')
+    os.system('git status')
+    os.system("git add .")
+    os.system("git status")
+    os.system('git commit -m "update data information"')
+    os.system("git push")
 
 # get page response
 url = 'http://www.mingdao.edu.tw/homeX/Web/'
@@ -47,3 +57,4 @@ jsonAllInfo = json.dumps(allInfo, ensure_ascii=False, sort_keys=True, indent=2)
 # write json file
 with open('information.json', 'w', encoding='utf-8') as file:
     file.write(jsonAllInfo)
+    gitCommit()
