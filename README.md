@@ -2,10 +2,14 @@
 **僅為示範用途**  
 **也可直接使用網站登入雲端系統**  
 # 網站重大更新
+## 2021/12/18
+ - 使用python增加獲取學校即時(吧)資料(註1)來做顯示
+ - 新增榮譽榜及校園公告區域
+ - 優化黑暗模式效能
 ## 2021/12/15
-- 完善登入功能
-- 解決安全性警告問題
-- 確認教師及家長能夠正常登入
+ - 完善登入功能
+ - 解決安全性警告問題
+ - 確認教師及家長能夠正常登入
 # 網站資訊
 URL: https://banahaker.github.io/mingdao/
 # 製作動機
@@ -15,8 +19,10 @@ URL: https://banahaker.github.io/mingdao/
 暗黑模式(darkmode)開關
 2. 快速連結區的保留
 3. 消除廣告
-4. 他是真的可以登入的呦!!(暫只支援學生登入)
+4. 他是真的可以登入的呦!!
 # 開發者資訊
 Devloper: [LAZPbanahaker](https://github.com/banahaker)  
 framework: no framework(use vanilla JS)  
 Email: pn0818x@outlook.com  
+# 註釋
+1. 資料API網址: https://banahaker.github.io/mingdao/data/information.json
