@@ -33,7 +33,8 @@ header {
 
 header>.logo>a>img {
 	width: auto;
-	height: 50px;
+	height: 45px;
+	width: auto;
 }
 
 header>.loginOption {
